@@ -1,49 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global List - Geometry Dash Levels</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GigaSquad Demonlist</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Global List - Geometry Dash Levels</h1>
-    
-    <!-- Фильтры -->
-    <div class="filters">
-      <div class="filter">
-        <label for="difficulty">Filter by Difficulty:</label>
-        <select id="difficulty">
-          <option value="all">All</option>
-          <option value="easy">Easy</option>
-          <option value="normal">Normal</option>
-          <option value="hard">Hard</option>
-          <option value="extreme">Extreme</option>
-        </select>
-      </div>
+    <div class="container">
+        <header>
+            <h1>GigaSquad Demonlist</h1>
+            <p class="subtitle">Список самых сложных уровней Geometry Dash</p>
+        </header>
 
-      <div class="filter">
-        <label for="sort">Sort by:</label>
-        <select id="sort">
-          <option value="rating">Rating</option>
-          <option value="position">Position</option>
-        </select>
-      </div>
+        <div class="tabs">
+            <button class="tab active" onclick="switchTab('demonlist')">Demonlist</button>
+            <button class="tab" onclick="switchTab('leaderboard')">Leaderboard</button>
+            <button class="tab" onclick="switchTab('roulette')">Roulette</button>
+        </div>
+
+        <div id="demonlist" class="content active">
+            <!-- Demonlist content will be populated by JavaScript -->
+        </div>
+
+        <div id="leaderboard" class="content">
+            <!-- Leaderboard content will be populated by JavaScript -->
+        </div>
+
+        <div id="roulette" class="content">
+            <div class="roulette-container">
+                <h2>Demon Roulette</h2>
+                <p>Испытай удачу! Крути рулетку, чтобы получить случайный демон для прохождения.</p>
+                
+                <div class="roulette-wheel" id="rouletteWheel">
+                    <div class="roulette-pointer"></div>
+                </div>
+                
+                <button class="spin-button" id="spinButton">Крутить рулетку!</button>
+                
+                <div class="roulette-result" id="rouletteResult">
+                    <p>Нажмите кнопку, чтобы крутить рулетку</p>
+                </div>
+                
+                <h3>Вероятности выпадения:</h3>
+                <div class="probability-list" id="probabilityList">
+                    <!-- Probability list will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>GigaSquad Demonlist &copy; 2023 | Geometry Dash Demon List</p>
+        </footer>
     </div>
 
-    <!-- Список уровней -->
-    <div class="levels-list">
-      <h2>Levels</h2>
-      <ul id="levels">
-        <!-- Уровни будут динамически добавляться здесь -->
-      </ul>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="Demonlist.js"></script>
+    <script src="Leaderboard.js"></script>
+    <script src="Roulette.js"></script>
+    <script src="LevelDetails.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
-
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
