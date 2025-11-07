@@ -1,13 +1,13 @@
 /* style.css */
 body {
+  background: linear-gradient(to right, #0a1f44, #6a0f93); /* Градиент от темного синего к темному пурпурному */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; /* Заполняет всю высоту экрана */
 }
 
 .container {
@@ -84,3 +84,4 @@ li span {
   font-style: italic;
   color: #777;
 }
+
