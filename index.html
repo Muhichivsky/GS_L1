@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global List - Geometry Dash Levels</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Global List - Geometry Dash Levels</h1>
+    
+    <!-- Фильтры -->
+    <div class="filters">
+      <div class="filter">
+        <label for="difficulty">Filter by Difficulty:</label>
+        <select id="difficulty">
+          <option value="all">All</option>
+          <option value="easy">Easy</option>
+          <option value="normal">Normal</option>
+          <option value="hard">Hard</option>
+          <option value="extreme">Extreme</option>
+        </select>
+      </div>
+
+      <div class="filter">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+          <option value="rating">Rating</option>
+          <option value="position">Position</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Список уровней -->
+    <div class="levels-list">
+      <h2>Levels</h2>
+      <ul id="levels">
+        <!-- Уровни будут динамически добавляться здесь -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
