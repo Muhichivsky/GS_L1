@@ -1,0 +1,86 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 900px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.levels-list {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f0f0f0;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  font-weight: bold;
+}
+
+.difficulty-easy {
+  background-color: #d4edda;
+}
+
+.difficulty-hard {
+  background-color: #f8d7da;
+}
+
+.difficulty-extreme {
+  background-color: #f0ad4e;
+}
+
+.difficulty-normal {
+  background-color: #cce5ff;
+}
+
+.position {
+  font-style: italic;
+  color: #777;
+}
